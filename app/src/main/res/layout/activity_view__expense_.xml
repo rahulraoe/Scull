@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_Expense_Activity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/no_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:alpha="0.8"
+                android:layout_marginTop="5sp"
+                android:text="Number Of Payments"/>
+
+            <TextView
+                android:id="@+id/no_of"
+                android:layout_below="@+id/no_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/total_heading"
+                android:layout_below="@+id/no_of"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:alpha="0.8"
+                android:layout_marginTop="15sp"
+                android:text="Total Expenditure"/>
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_below="@+id/total_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:text="0"/>
+
+
+            <TextView
+                android:id="@+id/total_heading_for"
+                android:layout_below="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:alpha="0.8"
+                android:layout_marginTop="15sp"
+                android:text="Total Amount spent for"/>
+
+            <TextView
+                android:id="@+id/total_amount_for"
+                android:layout_below="@+id/total_heading_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_below="@+id/total_amount_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_centerHorizontal="true"
+
+                android:textSize="14sp"
+
+                android:text="joined date"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

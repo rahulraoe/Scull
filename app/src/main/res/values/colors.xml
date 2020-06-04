@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F86942</color>
+    <color name="colorPrimaryDark"> #F86942</color>
+    <color name="colorAccent">#F86942</color>
+
+    2ECC71  blue  00a6fb  orange F86942  blue 2D8CFF
+    <color name="black">#232333</color>
+    <color name="white">#FEFEFE</color>
+    <color name="activity_bg">#fafafa</color>
+
+
+    <color name="voilet">#352245</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/delete" android:title="Delete note"/>
+
+    <item android:id="@+id/colors" android:title="Change colour"/>
+    <item android:id="@+id/send" android:title="Send note"/>
+    <item android:id="@+id/clip" android:title="Copy to clipboard"/>
+
+
+</menu>

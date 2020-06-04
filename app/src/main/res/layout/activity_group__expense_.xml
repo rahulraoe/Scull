@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Group_Expense_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Group_Activity_Recycler"
+                android:layout_margin="3sp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:id="@+id/Rel_Group_Activity"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Group_Activity_Recycler"
+
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/Progress_Bar_Group_Activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_below="@+id/Progress_Bar_Group_Activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_centerHorizontal="true"
+                    android:lineSpacingMultiplier="1.1"
+                    android:layout_marginLeft="20sp"
+                    android:text="Loading group expenses..."
+                    android:fontFamily="@font/montserrat"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/no_expense"
+        android:text="You don't have any expenses."
+        android:textColor="@color/black"
+        android:alpha="0.8"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

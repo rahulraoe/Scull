@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:background="#FFFFFF"
+    tools:context=".Share_Group_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Group_Id_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Group Id"/>
+
+            <TextView
+                android:id="@+id/group_id"
+                android:layout_below="@+id/Group_Id_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="id"/>
+
+
+            <TextView
+                android:id="@+id/Group_Password_heading"
+                android:layout_below="@+id/group_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Group Password"/>
+
+            <TextView
+                android:id="@+id/group_password"
+                android:layout_below="@+id/Group_Password_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="password"/>
+
+
+            <TextView
+                android:id="@+id/click_copy"
+                android:layout_below="@+id/group_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+                android:layout_marginTop="90sp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Click to copy"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/click_copy"
+                android:layout_marginTop="40sp"
+                tools:context=".MainActivity"
+                tools:showIn="@layout/activity_share__group_" >
+
+                <!--  This is your template view -->
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+
+                    app:gnt_template_type="@layout/gnt_small_template_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="3"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        >
+
+        <Button
+            android:id="@+id/referal_card"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1.5"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/montserrat"
+            android:text="Others" />
+        <Button
+            android:id="@+id/share_in_whatsapp"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:textColor="@color/white"
+            android:background="#25D366"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/montserrat"
+            android:text="Share on whatsapp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3sp"
+    tools:context=".Privacy_Policy_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Your privacy is important for us."/>
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_below="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="What data we collect ?"/>
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_below="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="We collect your email,username and your gender.You may prefer to tell
+your gender wrong.We use email for user authentication and username for distinguishing yourself from other members in the group.To protect your group data we give you a unique and password so that no
+one can access your group data."/>
+
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_below="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="Why we collect your data ?"/>
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_below="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="We collect and retain your personal data to provide the full service
+offered by our app.You are not required to provide your personal data as a result you will be not able
+to use our app.By downloading and using our app you agree that you provide your personal data."/>
+
+
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_below="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="Where is the data stored ?"/>
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_below="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="All your personal data is stored in Google cloud platform."/>
+
+            <TextView
+                android:id="@+id/eigth"
+                android:layout_below="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="Do we share your data?"/>
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_below="@+id/eigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="We may share your personal data with others to provide
+services that our app has.We may also share your data with third party services and also to others
+if we should comply with a law or legal process."/>
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_below="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="How long are the data stored?"/>
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_below="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="Scull has full rights to shutdown service whenever necessary and also
+delete data whenever neccessary.However we will intimate in our app that we are shutting down."/>
+
+
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_below="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                android:text="Who collects our data ? "/>
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_below="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"
+                android:alpha="0.8"
+                android:text="Errabelly rahul\n
+Hyderabad,Telangana,India."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/d"
+                android:layout_height="wrap_content"
+                android:text="For any queries please contact email."/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share_Expense_Activity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Share_Expense_recycler"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:id="@+id/invisibletext"
+                android:text="hello"
+                android:layout_marginTop="30sp"
+                android:visibility="invisible"
+                android:layout_below="@+id/Share_Expense_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/terminology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminology Used"
+               android:layout_margin="5sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/invisibletext"/>
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terminology"
+                android:layout_margin="5sp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:alpha="0.8"
+                android:lineSpacingMultiplier="1.5"
+                android:text="\u2022Spent stands for total amount spent by you.\n\u2022Due stands for
+amount spent by your friends for you.\n\u2022Total stands for (spent-due).\n\u2022If total is positive(+) someone owes you money.\n\u2022
+If total is negative(-) you owe someone money."/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Settle_Amount"
+                android:layout_below="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:background="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginTop="45sp"
+                app:cardElevation="-200sp"
+                app:cardCornerRadius="10sp"
+                android:elevation="-200sp"
+                android:padding="10sp"
+                android:layout_marginRight="10sp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/clear_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settle Amounts"
+
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/white"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:visibility="invisible"
+                android:layout_marginTop="10sp"
+                android:layout_below="@+id/Settle_Amount"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fab"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:alpha="0.9"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginBottom="50sp"
+        android:layout_marginRight="30sp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

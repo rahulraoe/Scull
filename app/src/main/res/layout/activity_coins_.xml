@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    tools:context=".Coins_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/Reward_Button"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="10sp"
+                android:text="Claim Reward"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/coins_breakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Reward_Button"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="5sp"
+                android:textColor="@color/black"
+                android:text="Coins Break Down"/>
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_below="@+id/coins_breakdown"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.1"
+                android:text="150 coins for creating new group.\n150 coins for joining new group.\n
+50 coins for adding new expense.\n75 coins for location bookmark.\n75 coins for gallery anb bills."/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/count"
+                android:layout_marginTop="40sp"
+                tools:context=".MainActivity"
+                tools:showIn="@layout/activity_share__group_" >
+
+                <!--  This is your template view -->
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+
+                    app:gnt_template_type="@layout/gnt_medium_template_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_Gallery_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/Uploaded_Image"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="250sp" />
+
+            <RelativeLayout
+                android:id="@+id/About_Memory_Heading"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Uploaded_Image"
+                android:layout_marginTop="15sp"
+                android:layout_height="60sp">
+                <EditText
+                    android:id="@+id/About_Memory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionDone"
+                    android:layout_margin="5sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="10sp"
+                    android:hint="Write something about the pic..."
+                    />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Upload_Memory"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#2ECC71"
+        android:backgroundTint="#2ECC71"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Upload Memory"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

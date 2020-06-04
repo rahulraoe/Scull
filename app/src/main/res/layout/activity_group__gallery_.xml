@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Group_Gallery_Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Group_Gallery_Recycler"
+        android:layout_margin="3sp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/Rel_Group_Gallery"
+        android:layout_width="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/Progress_Bar_Group_Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_below="@+id/Progress_Bar_Group_Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginLeft="20sp"
+            android:text="A picture is worth a thousand words..."
+            android:fontFamily="@font/montserrat"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Rel_Group_Gallery_no"
+        android:layout_width="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginLeft="20sp"
+
+            android:text="You dont have any memories..."
+            android:fontFamily="@font/montserrat"
+            />
+
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/Upload_Image"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:layout_width="90sp"
+        android:alpha="0.8"
+        android:layout_height="90sp"
+
+        />
+
+</RelativeLayout>

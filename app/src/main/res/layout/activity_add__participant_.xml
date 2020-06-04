@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Participant_Activity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/reg2"
+        android:layout_below="@+id/registerr"
+     android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="60sp"
+
+        android:layout_marginTop="80sp">
+        <EditText
+            android:id="@+id/participant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="Helvetica Neue"
+            android:inputType="textEmailAddress"
+            android:gravity="center_vertical"
+            android:hint="Enter new member" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+      android:layout_below="@+id/reg2"
+        android:text="add member"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#FEFEFE"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginRight="10sp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/add"/>
+
+
+</RelativeLayout>

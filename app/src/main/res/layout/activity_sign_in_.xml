@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/montserrat"
+                android:text="SIGN IN"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:id="@+id/reg2"
+                android:layout_below="@+id/registerr"
+                android:layout_margin="10sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="10sp">
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="Helvetica Neue"
+                    android:inputType="textEmailAddress"
+                    android:gravity="center_vertical"
+                    android:hint="Enter your email" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg3"
+                android:layout_below="@+id/reg2"
+                android:layout_margin="10sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="10sp">
+                <EditText
+                    android:id="@+id/user_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="Helvetica Neue"
+                    android:inputType="textPassword"
+                    android:gravity="center_vertical"
+                    android:hint="Password" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+
+                android:layout_below="@+id/reg3"
+                android:layout_marginTop="20sp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#8B0000"
+                android:layout_centerHorizontal="true"
+                android:text="Forgot Password?"/>
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgot_password"
+                android:layout_marginBottom="3sp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:alpha="0.8"
+                android:text="New user?SignUp."/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_below="@+id/terms"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:text="Sign In"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#FEFEFE"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/register"/>
+
+</RelativeLayout>

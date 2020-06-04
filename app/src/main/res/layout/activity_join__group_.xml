@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join_Group_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10sp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/Join_Group_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:text="Join Group"
+
+                android:layout_marginTop="65sp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/Group_Id_heading"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Join_Group_heading"
+
+
+                android:layout_marginTop="20sp"
+                android:layout_height="60sp">
+                <EditText
+                    android:id="@+id/Group_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:layout_margin="5sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="10sp"
+                    android:hint="Enter group Id"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Group_Password_heading"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Group_Id_heading"
+
+
+                android:layout_marginTop="20sp"
+                android:layout_height="60sp">
+                <EditText
+                    android:id="@+id/Group_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionDone"
+                    android:layout_margin="5sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="10sp"
+                    android:hint="Enter group password" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/Join_Group"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_Groups_Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/My_Groups_Recycler"
+        android:layout_margin="3sp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/Rel_My_Groups"
+        android:layout_width="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/Progress_Bar_My_Groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_below="@+id/Progress_Bar_My_Groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginLeft="20sp"
+            android:text="More groups make more memories..."
+            android:fontFamily="@font/montserrat"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/My_Groups_Recycler"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40sp"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_share__group_" >
+
+        <!--  This is your template view -->
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            app:gnt_template_type="@layout/gnt_small_template_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</RelativeLayout>

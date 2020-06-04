@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:id="@+id/layout1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/My_Groups_Card"
+                android:layout_width="0dp"
+                android:layout_margin="2sp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                android:elevation="-200sp"
+                app:cardMaxElevation="-200sp"
+                app:cardElevation="-200sp"
+                app:cardCornerRadius="15sp"
+                android:layout_weight="1" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/firstimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="95sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/firstimg"
+                        android:text="My Groups"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="3sp"
+                        android:maxLines="1"
+                        android:fontFamily="@font/montserrat" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Create_Group_Card"
+                android:layout_width="0dp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+
+                android:elevation="-200sp"
+                app:cardMaxElevation="-200sp"
+                app:cardElevation="-200sp"
+                app:cardCornerRadius="15sp"
+                android:layout_margin="2sp"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/secondimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="95sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/secondimg"
+                        android:text="Create Group"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="3sp"
+                        android:maxLines="1"
+                        android:fontFamily="@font/montserrat" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="3sp"
+            android:id="@+id/layout2"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+
+
+            android:weightSum="2" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Join_Group_Card"
+                android:layout_width="0dp"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                android:elevation="-200sp"
+                app:cardMaxElevation="-200sp"
+                app:cardElevation="-200sp"
+                android:layout_margin="2sp"
+                app:cardCornerRadius="15sp"
+                android:layout_weight="1" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/thirdimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="95sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thirdimg"
+                        android:text="Join Group"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="3sp"
+                        android:textColor="@color/black"
+
+                        android:maxLines="1"
+                        android:fontFamily="@font/montserrat" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Feedback_Card"
+                android:layout_width="0dp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                android:elevation="-200sp"
+                app:cardMaxElevation="-200sp"
+                app:cardElevation="-200sp"
+                app:cardCornerRadius="15sp"
+                android:layout_margin="2sp"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/fourthimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="95sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fourthimg"
+                        android:text="Feedback"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="3sp"
+                        android:textColor="@color/black"
+
+                        android:maxLines="1"
+                        android:fontFamily="@font/montserrat" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+android:id="@+id/ad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="40sp"
+            tools:context=".MainActivity"
+            tools:showIn="@layout/activity_share__group_" >
+
+            <!--  This is your template view -->
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                app:gnt_template_type="@layout/gnt_small_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:layout_marginTop="20sp"
+            android:visibility="invisible"
+            android:layout_below="@+id/ad_layout"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
