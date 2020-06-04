@@ -1,4 +1,5 @@
 # Scull
 Scull lets you split bills and share memories.
-<img src="logo.png" width="100" height="80"/>
+<br><br>
+<img src="logo.png" width="100" height="100"/>
 
