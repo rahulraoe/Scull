@@ -6,4 +6,11 @@ Scull lets you split bills and share memories.
 
 # Screenshot 1
 <img src="Screenshot%201.png" width="200" height="390px" />
+# Screenshot 2
+<img src="Screenshot%202.png" width="200" height="390px" />
+# Screenshot 3
+<img src="Screenshot%203.png" width="200" height="390px" />
+# Screenshot 4
+<img src="Screenshot%204.png" width="200" height="390px" />
+
 
